@@ -11,7 +11,7 @@ const ChatHistory = ({ chatHistory }) => {
   }, [chatHistory]);
 
   return (
-    <div className="bg-white px-4 text-gray-800 dark:bg-gray-800 dark:text-white overflow-scroll h-[85vh] scrollbar-hidden">
+    <div className="bg-white px-4 text-gray-800 dark:bg-gray-800 dark:text-white overflow-scroll h-[80vh] scrollbar-hidden">
       {chatHistory?.map((message, index) => (
         <div key={index}>
           {message.type === "user" && <span className="font-bold ">You: </span>}
