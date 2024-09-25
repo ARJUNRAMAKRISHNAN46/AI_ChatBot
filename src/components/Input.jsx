@@ -45,7 +45,7 @@ const Input = () => {
   return (
     <div className="bg-white text-gray-800 dark:bg-gray-800 dark:text-white">
       {chatHistory?.length === 0 && (
-        <div className=" h-[80vh] flex justify-center items-center">
+        <div className=" h-[75vh] flex justify-center items-center">
           <h1>No Chat Histery Yet...</h1>
         </div>
       )}
