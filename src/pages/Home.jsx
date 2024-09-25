@@ -4,7 +4,7 @@ import Input from "../components/Input";
 
 const Home = () => {
   return (
-    <div className="w-screen h-screen bg-white text-gray-800 dark:text-white dark:bg-gray-800">
+    <div className="w-screen h-screen bg-white text-gray-800 dark:text-white dark:bg-gray-800 lg:px-36">
       <Navbar />
       <Input />
     </div>

@@ -35,6 +35,13 @@ const Input = () => {
     }
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      sendMessage();
+    }
+  };
+
   return (
     <div className="bg-white text-gray-800 dark:bg-gray-800 dark:text-white">
       {chatHistory?.length === 0 && (
@@ -48,6 +55,7 @@ const Input = () => {
           className="outline-none border rounded-lg py-2 px-4 w-[90vw] border-gray-400 dark:border-gray-200 text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800"
           type="text"
           value={userInput}
+          onKeyDown={handleKeyDown}
           onChange={(e) => setUserInput(e.target.value)}
           placeholder="Ask anything with your chatbot"
         />
